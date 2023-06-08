@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: blueviolet;
+    }
+
+    h1{
+        text-align: center;
+        color: white;
+    }
+    #soma{
+        position: relative;
+        box-sizing: border-box;
+        background-color: darkblue;
+        width: 300px;
+        margin: auto;
+        height: 200px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    input{
+        
+        display: block;
+        margin: auto;
+        margin-top: 3px;
+        width: 200px;
+        border-radius: 5px;
+        
+    }
+    
+    
+
+
+    #resultado{
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+        background-color: darkgray;
+        width: 200px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <h1>soma de números</h1>
+    <div id="soma">
+        <input type="number" name="nu1" id="nu1">
+        <input type="number" name="nu2" id="nu2">
+        <input type="submit" id="valor" value="=" onclick="igual()">
+    
+        <div id="resultado">
+            resultado
+        </div>
+    </div>
+    
+
+    <script>
+        function igual() {
+            var num1 = document.getElementById('nu1')
+            var num2 = document.getElementById('nu2')
+            var resu = document.getElementById('resultado')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var r = n1 + n2
+            resu.innerText = r
+        }
+    </script>
+</body>
+</html>

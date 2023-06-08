@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sistema de país</h1>
+    <main>
+        <h2>qual sua nacionalidade</h2>
+
+<form action="" method="get">
+    
+        <input type="radio" name="bt" id="ibr">
+        <label for="ibr">BR</label>
+    
+        <input type="radio" name="bt" id="ieua">
+        <label for="ieua">EUA</label><br>
+    
+        <input type="submit" value="enviar" onclick="você()">
+
+        <div id="resultado">
+            resultado
+        </div>
+
+</form>
+
+<script>
+   
+
+    function você() {
+        var br = document.getElementById('ibr')
+        var eua = document.getElementById('ieua')
+        var resu = document.getElementById('resultado')
+        var BR = (br.value)
+        var EUA = (eua.value)
+        var brasil = BR
+        var estados = EUA
+
+    
+        if (resu == br) {
+            console.log('você é brasileiro')
+        }
+        
+        else {
+            console.log('você é estadunidense')
+
+        
+            
+        
+
+    }
+</script>
+
+        
+        
+    </main>
+</body>
+</html>
