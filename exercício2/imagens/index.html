@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detector de idades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>qual a minha idade</h1>
+    
+    <main>
+        <div id="anoi">
+            <p>ano de nascimento:
+                <input type="number" name="ida" id="ida">
+            </p>
+        
+            <p>sexo:
+                <input type="radio" name="isex" id="mas">
+                <label for="mas">masculino</label>
+                <input type="radio" name="isex" id="fem">
+                <label for="fem">feminino</label>
+            </p>
+        
+            <p id="botão">
+                <input type="button" value="calcular" onclick="clicar()">
+            </p>
+        </div>
+        
+        <div id="res">
+            <img id="foto" src="" alt="">
+            <p id="mensagem"></p>
+        
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
